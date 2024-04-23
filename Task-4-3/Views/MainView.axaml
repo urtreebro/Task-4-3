@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Task_4_3.ViewModels"
+             mc:Ignorable="d" 
+			 d:DesignWidth="600" 
+			 d:DesignHeight="600"
+			 Width="800"
+			 Height="600"
+             x:Class="Task_4_3.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <vm:MainViewModel />
+  </Design.DataContext>
+	<ItemsControl>
+		<Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+			<WrapPanel Orientation="Horizontal"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top">
+				<TextBlock Margin="10" TextWrapping="Wrap">aaaaaaaaa</TextBlock>
+				<TextBlock Margin="10" TextWrapping="Wrap">aaaaaaaaaaaaaaaa</TextBlock>
+			</WrapPanel>
+		</Border>
+		<StackPanel Margin="20"
+					Height="400"
+					Width="600"
+					HorizontalAlignment="Left">
+			<TextBlock Margin="0" TextWrapping="Wrap" Text="{Binding Text}"></TextBlock>
+		</StackPanel>
+	</ItemsControl>
+</UserControl>
